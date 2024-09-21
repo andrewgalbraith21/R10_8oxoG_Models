@@ -1,0 +1,2 @@
+time,duration,epoch,train_loss,validation_loss,validation_mean,validation_median
+2024-03-08 14:49:37.616272,19537,1,0.04092794736390261,0.020411804935525107,99.96158592283065,100.0
