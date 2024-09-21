@@ -27,6 +27,10 @@ TTAGGG_mito_8oxoG.pt - model for calling 8oxoG in any TTAGGG contexts in the mit
 
 Example modification calling with model: remora infer from_pod5_and_bam ${pod5_path} ${bam_path} --model ${model_path} --out-bam ${out_bam_path} --num-extract-alignment-workers 24 --num-prepare-read-workers 24 --num-prepare-nn-input-workers 24 --num-post-process-workers 24 --device 0 --batch-size 1024
 
+## FPR and biological 8oxoG 
+
+The models attached have both showed very high accuracy on synthetic oligo data with the SJ model trained on only eight contexts showing the highest performance. That said, these models have not been shown to reliably detect 8oxoG at baseline levels in the genome due to the false positive rate being to high in comparison to the biological frequency of 8oxoG. These models should only be applied if there is a much higher than normal frequency of 8oxoG expected in the data. In addition, a very high probability threshold should be chosen to find realistic 8oxoG levels.
+
 ## Further information and thesis
 
 If you would like any further information regarding the SJ model, then read the thesis:
